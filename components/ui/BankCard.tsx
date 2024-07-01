@@ -1,9 +1,8 @@
 
-import { formatAmount } from '@/lib/actions/utils';
-import { Copy } from 'lucide-react';
+import { formatAmount } from '@/lib/utils'
+import { Copy } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
 
 const BankCard = ({ account, userName, showBalance = true }: CreditCardProps) => {
 
@@ -60,6 +59,7 @@ const BankCard = ({ account, userName, showBalance = true }: CreditCardProps) =>
                     className="absolute top-0 left-0"
                 />
             </Link>
+
         </div>
     )
 }

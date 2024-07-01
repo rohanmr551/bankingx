@@ -1,5 +1,6 @@
 "use client"
 
+import { DoughnutChartProps } from "@/types";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { Doughnut } from "react-chartjs-2";
 
@@ -15,7 +16,7 @@ const DoughnutChart = ({ accounts }: DoughnutChartProps) => {
         datasets: [
             {
                 label: 'Banks',
-                data: [1250, 2500, 3750],
+                data: [125, 250, 375],
                 backgroundColor: ['#0747b6', '#2265d8', '#2f91fa']
             }
         ],
@@ -26,9 +27,9 @@ const DoughnutChart = ({ accounts }: DoughnutChartProps) => {
         data={data}
         options={{
             cutout: '60%',
-            plugins:{
-                legend:{
-                    display:false 
+            plugins: {
+                legend: {
+                    display: false
                 }
             }
         }}
